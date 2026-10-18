@@ -13,11 +13,28 @@ You can click the Preview link to take a look at your changes.
 
 
 
- 
-Calculate Baseline kWh Consumption vs. Solar Footprint:
-Determine the exact steady-state draw of your compute rack (e.g., a 2 kW edge stack requires 48 kWh per 24-hour cycle).
-Compare that against the maximum square footage available on a rail car roof for photovoltaic panels (typically yielding roughly 1.5 kW to 3 kW peak under direct sunlight, or 6–12 kWh/day depending on seasonal sun hours).
-Dimension the Battery Storage Bank (BESS):
-Size battery capacity in amp-hours (Ah) or kilowatt-hours (kWh) for a defined run-time autonomy (e.g., 48 hours of complete solar deficit).
-Map the Substation Interconnection Interface:
-Detail whether the supplemental rail substation feed uses single-phase 120/240V or three-phase 208/480V step-down transformers and inverter chargers to maintain continuous uptime while adhering to National Electrical Code (NEC) Article 705 / Article 710 requirements for interconnected power sources.
+ # The WayMaker Project
+
+Decentralized mobile computational nodes utilizing industrial rail corridors, agile microgrids, and local workforce integration.
+
+- 🌐 **Website:** https://thewaymakerproject.com
+- 💻 **Open-Source Repository:** https://github.com/Gypsymom4lyfe
+- 📬 **Contact:** apriljablonski@thewaymakerproject.com
+
+---
+
+## Technical Specifications: Electrical & Microgrid Architecture
+
+### 1. Compute Rack Baseline vs. Solar Generation Footprint
+* **Steady-State Compute Load:** 2.0 kW continuous draw (~48.0 kWh per 24-hour cycle).
+* **Photovoltaic (PV) Generation:** Standard rail car roof envelope accommodates a 1.5 kW to 3.0 kW peak solar array, yielding ~6–12 kWh/day based on seasonal irradiance.
+
+### 2. Battery Energy Storage System (BESS) Dimensioning
+* **Storage Topology:** 48V DC bus battery bank.
+* **Autonomy Capacity:** Sized for 48 hours of run-time autonomy during complete solar deficit (~96 kWh to 100 kWh usable capacity).
+
+### 3. Substation Interconnection & Grid Isolation
+* **Interconnection Interface:** Step-down transformer configuration for single-phase 120/240V or three-phase 208/480V rail substation/utility tie-ins.
+* **Failover Logic:** Bi-directional inverter-chargers configured to maintain continuous uptime during extended low-irradiance windows.
+* **Compliance Standards:** Adheres to National Electrical Code (NEC) Article 705 (Interconnected Electric Power Production Sources) and Article 710 (Stand-Alone Systems).
+
